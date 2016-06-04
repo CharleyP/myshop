@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xml:lang="zh-CN">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" /> 
+  <meta charset="UTF-8" /> 
+  <title>我的购物车</title> 
+  <meta name="viewport" content="width=1226" /> 
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/base.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/cart.min.css" /> 
+  <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/layer/layer.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/buy.js"></script>
+  <script type="text/javascript">
+    window.getUser = '{:U("User/getUser")}';
+    window.check = '{:U("Base/check")}';
+    window.buyOneStatus = '{:U("Order/buyOneStatus")}';
+    window.buyAllStatus = '{:U("Order/buyAllStatus")}';
+    window.buyOneNum = '{:U("Order/buyOneNum")}';
+    window.buySubmit = '{:U("Order/buySubmit")}';
+    window.remove = '{:U("Order/remove")}';
+    window.url_index = '{:U("Index/index")}';
+    window.allorder = '{:U("User/allorder")}';
+  </script>
+ </head> 
+ <body>
+  <block name="menu"><include file="Base:top2" /></block>
+  <block name="main">
+    <div class="page-main"> 
+     <div class="container"> 
+      <div class="cart-loading loading hide" id="J_cartLoading"> 
+       <div class="loader"></div> 
+      </div> 
+      <div class="cart-empty hide" id="J_cartEmpty"> 
+       <h2 style="margin-left:-60px">您的购物车还是空的！</h2> 
+       <a href="{:U('Index/index')}" class="btn btn-primary btn-shoping J_goShoping">马上去购物</a> 
+      </div> 
+      <div id="J_cartBox" class=""> 
+       <div class="cart-goods-list"> 
+        <div class="list-head clearfix"> 
+         <div class="col col-check">
+          <i class="iconfont icon-checkbox icon-checkbox-selected" id="J_selectAll">√</i>全选
+         </div> 
+         <div class="col col-img">
+          &nbsp;
+         </div> 
+         <div class="col col-name">
+          商品名称
+         </div> 
+         <div class="col col-price">
+          单价
+         </div> 
+         <div class="col col-num">
+          数量
+         </div> 
+         <div class="col col-total">
+          小计
+         </div> 
+         <div class="col col-action">
+          操作
+         </div> 
+        </div> 
+        <div class="list-body" id="J_cartListBody"> 
+          <volist name="buy" id="vo">
+            <div class="item-box"> 
+              <div class="item-table J_cartGoods"> 
+             <div class="item-row clearfix"> 
+              <div class="col col-check"> 
+               <i class="iconfont icon-checkbox icon-checkbox-selected J_itemCheckbox">√</i>
+               <input type="hidden" value="{$vo.product_id}" /> 
+              </div> 
+              <div class="col col-img"> 
+                  <a href="{:U('Index/artical',array('id'=>$vo[product_id]))}" target="_blank"> <img alt="" src="{$vo.product_img}" width="80" height="80" alt="{$vo.product_name}" /> 
+                  </a> 
+              </div> 
+              <div class="col col-name"> 
+               <div class="tags"> 
+               </div> 
+               <h3 class="name"> 
+                <a href="{:U('Index/artical',array('id'=>$vo[product_id]))}" target="_blank"> 
+                    {$vo.product_name}<span style="font-size:12px">{$vo.product_specifications}</span>
+                    <input type="hidden" value="{$vo.product_stock}" />
+                </a> 
+               </h3> 
+              </div> 
+              <div class="col col-price">
+                <span>0</span>元 
+              </div> 
+              <div class="col col-num"> 
+               <div class="change-goods-num clearfix J_changeGoodsNum"> 
+                <a href="javascript:void(0)" class="J_minus"><i class="iconfont"></i></a> 
+                <input tyep="text" name="" value="1" data-num="1" data-buylimit="10" autocomplete="off" class="goods-num J_goodsNum" /> 
+                <a href="javascript:void(0)" class="J_plus"><i class="iconfont"></i></a> 
+               </div> 
+              </div> 
+              <div class="col col-total">
+                <span>0</span>元 
+               <!-- <p class="pre-info"> 已优惠0元 </p>  -->
+              </div> 
+              <div class="col col-action"> 
+               <a id="1160700042_1_buy" data-msg="确定删除吗？" href="javascript:void(0);" title="删除" class="del J_delGoods"><i class="iconfont"></i></a> 
+              </div> 
+             </div> 
+              </div> 
+            </div> 
+          </volist>
+        </div> 
+       <div class="cart-bar clearfix cart-bar-fixed" id="J_cartBar"> 
+        <div class="section-left"> 
+         <a href="{:U('Index/index')}" class="back-shopping J_goShoping">继续购物</a> 
+         <span class="cart-total">共 <i id="J_cartTotalNum">3</i> 件商品，已选择 <i id="J_selTotalNum">3</i> 件</span> 
+        </div> 
+        <span class="total-price"> 合计（不含运费）：<em id="J_cartTotalPrice"> </em> 元 </span> 
+        <a href="javascript:void(0);" class="btn btn-a btn btn-primary" id="J_goCheckout">生成订单</a> 
+       </div> 
+      </div> 
+      </div> 
+     </div> 
+    </div> 
+  </block> 
+  <block name="footer"><include file="Base:footer" /></block>
+ </body>
+</html>

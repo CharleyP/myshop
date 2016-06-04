@@ -1,0 +1,1091 @@
+[ 2016-05-29T09:44:47+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T09:44:47+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-05-29T09:44:48+08:00 ] 127.0.0.1 /Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-29T09:45:02+08:00 ] 127.0.0.1 /Admin/Login/loginCheck.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `kaixun_user` WHERE `user_account` = 'junchao' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-05-29T09:45:02+08:00 ] 127.0.0.1 /Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0120s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_product` LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT * FROM `kaixun_product` LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0070s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T09:45:07+08:00 ] 127.0.0.1 /Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0060s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_product` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0070s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T09:45:10+08:00 ] 127.0.0.1 /Admin/Product/change/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0050s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `kaixun_category1` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `product_id` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `kaixun_img` WHERE ( 1=1 AND product_id='1' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( category2_id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_category1` WHERE ( category1_id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_category1`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category1`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( category1_id=1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant product_img - assumed 'product_img' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\d6300896cd5bff701b39557570dfe701.php 第 309 行.
+NOTIC: [8] Use of undefined constant product_img - assumed 'product_img' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\d6300896cd5bff701b39557570dfe701.php 第 309 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-29T09:45:13+08:00 ] 127.0.0.1 /Admin/Product/delete_img.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0040s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0030s ]
+SQL: DELETE FROM `kaixun_img` WHERE `img_id` = 9 [ RunTime:0.0010s ]
+
+[ 2016-05-29T09:45:13+08:00 ] 127.0.0.1 /Admin/Product/change/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0020s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_category1` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `product_id` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kaixun_img` WHERE ( 1=1 AND product_id='1' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( category2_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category1` WHERE ( category1_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category1`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_category1`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( category1_id=1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant product_img - assumed 'product_img' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\d6300896cd5bff701b39557570dfe701.php 第 309 行.
+NOTIC: [8] Use of undefined constant product_img - assumed 'product_img' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\d6300896cd5bff701b39557570dfe701.php 第 309 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T09:45:16+08:00 ] 127.0.0.1 /Admin/Product/delete_img.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0070s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0070s ]
+SQL: DELETE FROM `kaixun_img` WHERE `img_id` = 60 [ RunTime:0.0000s ]
+
+[ 2016-05-29T09:45:16+08:00 ] 127.0.0.1 /Admin/Product/change/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_category1` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `product_id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kaixun_img` WHERE ( 1=1 AND product_id='1' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( category2_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category1` WHERE ( category1_id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_category1`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category1`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( category1_id=1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant product_img - assumed 'product_img' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\d6300896cd5bff701b39557570dfe701.php 第 309 行.
+NOTIC: [8] Use of undefined constant product_img - assumed 'product_img' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\d6300896cd5bff701b39557570dfe701.php 第 309 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-05-29T09:45:32+08:00 ] 127.0.0.1 /Admin/Product/add_img.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0040s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T09:45:32+08:00 ] 127.0.0.1 /Admin/Product/add_img.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0040s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: Expires C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 45 行.
+NOTIC: [8] Undefined index: saveName C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 80 行.
+NOTIC: [8] Undefined index: custom_fields C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0060s ]
+SQL: INSERT INTO `kaixun_img` (`img_url`,`product_id`) VALUES ('http://7xt9bv.com1.z0.glb.clouddn.com/upload_2016-05-29_bg1.jpg','1') [ RunTime:0.0330s ]
+
+[ 2016-05-29T09:45:37+08:00 ] 127.0.0.1 /Admin/Product/change/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0025s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `kaixun_category1` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `product_id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `kaixun_img` WHERE ( 1=1 AND product_id='1' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( category2_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category1` WHERE ( category1_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category1`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category1`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( category1_id=1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant product_img - assumed 'product_img' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\d6300896cd5bff701b39557570dfe701.php 第 309 行.
+NOTIC: [8] Use of undefined constant product_img - assumed 'product_img' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\d6300896cd5bff701b39557570dfe701.php 第 309 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-29T09:45:51+08:00 ] 127.0.0.1 /Admin/Product/change/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0050s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `kaixun_category1` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `product_id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `kaixun_img` WHERE ( 1=1 AND product_id='1' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( category2_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category1` WHERE ( category1_id=1 )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `kaixun_category1`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category1`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( category1_id=1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant product_img - assumed 'product_img' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\d6300896cd5bff701b39557570dfe701.php 第 309 行.
+NOTIC: [8] Use of undefined constant product_img - assumed 'product_img' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\d6300896cd5bff701b39557570dfe701.php 第 309 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-05-29T13:38:07+08:00 ] 127.0.0.1 /Admin/Product/change/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-29T13:38:08+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T13:38:08+08:00 ] 127.0.0.1 /Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-29T13:39:15+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T13:39:15+08:00 ] 127.0.0.1 /Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-29T13:39:22+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0090s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=6 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0800s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_product` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_order` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_img` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T13:39:53+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0040s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=6 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_product` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_img` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T13:39:57+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0040s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=6 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_product` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_img` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T13:41:08+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0040s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=6 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_product` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_img` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T13:42:02+08:00 ] 127.0.0.1 /Admin/Login/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T13:42:02+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-29T13:42:02+08:00 ] 127.0.0.1 /Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T13:44:11+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T13:44:11+08:00 ] 127.0.0.1 /Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T13:44:24+08:00 ] 127.0.0.1 /Admin/Login/loginCheck.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `kaixun_user` WHERE `user_account` = 'junchao' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-05-29T13:44:24+08:00 ] 127.0.0.1 /Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0040s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_product` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0080s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-05-29T13:48:48+08:00 ] 127.0.0.1 /Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-05-29T13:48:49+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T13:48:49+08:00 ] 127.0.0.1 /Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-29T13:48:53+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T13:48:53+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-29T13:48:53+08:00 ] 127.0.0.1 /Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-29T13:49:02+08:00 ] 127.0.0.1 /Admin/Login/loginCheck.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `kaixun_user` WHERE `user_account` = 'junchao' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-05-29T13:49:02+08:00 ] 127.0.0.1 /Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0040s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_product` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0060s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T13:49:03+08:00 ] 127.0.0.1 /Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0050s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_product` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0030s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T15:18:35+08:00 ] 127.0.0.1 /Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_product` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_product` LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0300s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T15:18:35+08:00 ] 127.0.0.1 /Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0070s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_product` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0070s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-29T15:18:35+08:00 ] 127.0.0.1 /Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0060s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_product` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0030s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-29T15:18:35+08:00 ] 127.0.0.1 /Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_product` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0030s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-29T15:18:35+08:00 ] 127.0.0.1 /Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_product` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0030s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

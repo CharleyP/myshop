@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/bootstrap.min.js"></script>  
+    <script src="__PUBLIC__/Admin/js/app.min.js"></script>
+    <script src="__PUBLIC__/Admin/js/demo.js"></script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/Admin/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/Admin/dist/css/skins/_all-skins.min.css">
+    <style type="text/css">
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    .content-wrapper{
+      background: #fff;
+    }
+    .product{
+      margin-top:20px;
+      border:1px solid #ccc;
+    }
+    .product .row{
+      margin: 10px 0px;
+    }
+    .product .row .img{
+      width:100px;
+      height:100px;
+      position: relative;
+      float: left;
+      margin: 5px;
+    }
+    .product .row .img img{
+      width: 100%;
+      height: 100%;
+    }
+    .product .row .img span{
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 0px;
+      right: 5px;
+      cursor: pointer;
+    }
+    </style>
+    <script type="text/javascript">
+    $(function(){
+      $(".select-ca1 select").change(function(event) {
+        var id = $(this).val();
+        $.ajax({
+          url: '{:U("Product/getCategory2")}',
+          type: 'POST',
+          dataType: 'json',
+          data: {
+            category1_id: id,
+          },
+          success:function(data){
+            var len = data['data'].length;
+            var add = '';
+            for (var i = 0; i < len; i++) {
+              add += '<option value="'+data['data'][i]['category2_id']+'">'+data['data'][i]['category2_name']+'</option>';
+            };
+            $(".select-ca2 .form-control").empty();
+            $(".select-ca2 .form-control").append(add);
+          },
+          error:function(){
+            alert('服务器错误');
+          },
+        })
+      });
+      $('.submit a').click(function(event) {
+        var category2_id = $('.select-ca2 select').val();
+        var name = $('.name1 .product_name').val();
+        var specifications = $('.specifications input').val();
+        var price = $('.price input').val();
+        var info = $('.info textarea').val();
+        var stock = $('.stock input').val();
+        $.ajax({
+          url: '{:U("Product/addProduct")}',
+          type: 'POST',
+          dataType: 'json',
+          data: {
+            category2_id: category2_id,
+            product_name: name,
+            product_price: price,
+            product_specifications: specifications,
+            product_info: info,
+            product_stock: stock,
+          },
+          success:function(data){
+            if (data['status'] == 1) {
+              window.location = '{:U("Product/index")}';
+            };
+          },
+          error:function(data){
+            alert('系统错误');
+          },
+        })
+      });
+    })
+    </script>
+  </head>
+  <body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+      <block name="menu"><include file="Base:header"/></block>
+      <block name="left"><include file="Base:left"/></block>
+      <block name="main">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-7 col-md-offset-2 product">
+              <div class="row name name1">
+                <div class="col-md-3 text-right">商品名称：</div>
+                <div class="col-md-7">
+                  <input type="text" class="form-control product_name" value="" required="required">
+                </div>
+              </div>
+              <div class="row specifications">
+                <div class="col-md-3 text-right">商品规格：</div>
+                <div class="col-md-7"><input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title=""></div>
+              </div>
+              <div class="row price">
+                <div class="col-md-3 text-right">商品价格：</div>
+                <div class="col-md-7"><input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title=""></div>
+              </div>
+              <div class="row stock">
+                <div class="col-md-3 text-right">商品大类：</div>
+                <div class="col-md-7 select-ca1">
+                  <select name="" id="input" class="form-control" required="required">
+                    <option value="">请选择一级分类</option>
+                    <volist name="ca1" id="vo3">
+                      <option value="{$vo3.category1_id}">{$vo3.category1_name}</option>
+                    </volist>
+                  </select>
+                </div>
+              </div>
+              <div class="row stock">
+                <div class="col-md-3 text-right">商品小类：</div>
+                <div class="col-md-7 select-ca2">
+                  <select name="" id="input" class="form-control" required="required">
+                    <option value="">请选择二级分类</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row info">
+                <div class="col-md-3 text-right">商品简介：</div>
+                <div class="col-md-7"><textarea style="width:100%;height:100px;"></textarea></div>
+              </div>
+              <div class="row stock">
+                <div class="col-md-3 text-right">商品库存：</div>
+                <div class="col-md-7"><input type="text" name="" id="input" class="form-control" value="" required="required"></div>
+              </div>
+              <div class="row stock submit">
+                <div class="col-md-1 col-md-offset-5">
+                  <a class="btn btn-success">确定</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </block>
+      <block name="footer"><include file="Base:footer"/></block>
+    </div>
+  </body>
+</html>

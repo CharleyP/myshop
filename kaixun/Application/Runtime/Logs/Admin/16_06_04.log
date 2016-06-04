@@ -1,0 +1,1843 @@
+[ 2016-06-04T13:09:38+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-06-04T13:09:38+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-06-04T13:09:38+08:00 ] 127.0.0.1 /Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-04T13:09:50+08:00 ] 127.0.0.1 /Admin/Login/loginCheck.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kaixun_user` WHERE `user_account` = 'junchao' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-06-04T13:09:51+08:00 ] 127.0.0.1 /Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_product` LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT * FROM `kaixun_product` LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0040s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:09:56+08:00 ] 127.0.0.1 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0040s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_user` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition C:\Users\Administrator\Desktop\kaixun\Application\Admin\Controller\UserController.class.php 第 10 行.
+NOTIC: [8] Undefined variable: condition C:\Users\Administrator\Desktop\kaixun\Application\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SELECT * FROM `kaixun_user` LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-04T13:10:57+08:00 ] 127.0.0.1 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_user` WHERE `user_status` = 3 LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:11:05+08:00 ] 127.0.0.1 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0040s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_user` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition C:\Users\Administrator\Desktop\kaixun\Application\Admin\Controller\UserController.class.php 第 10 行.
+NOTIC: [8] Undefined variable: condition C:\Users\Administrator\Desktop\kaixun\Application\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SELECT * FROM `kaixun_user` LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-04T13:11:49+08:00 ] 127.0.0.1 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0040s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_user` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition C:\Users\Administrator\Desktop\kaixun\Application\Admin\Controller\UserController.class.php 第 10 行.
+NOTIC: [8] Undefined variable: condition C:\Users\Administrator\Desktop\kaixun\Application\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SELECT * FROM `kaixun_user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:12:07+08:00 ] 127.0.0.1 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_user` WHERE `user_status` = 3 LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:12:16+08:00 ] 127.0.0.1 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_user` LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-04T13:12:32+08:00 ] 127.0.0.1 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_user` WHERE `user_status` = 3 LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-06-04T13:12:42+08:00 ] 127.0.0.1 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_user` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: condition C:\Users\Administrator\Desktop\kaixun\Application\Admin\Controller\UserController.class.php 第 10 行.
+NOTIC: [8] Undefined variable: condition C:\Users\Administrator\Desktop\kaixun\Application\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SELECT * FROM `kaixun_user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-04T13:14:50+08:00 ] 127.0.0.1 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_user` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition C:\Users\Administrator\Desktop\kaixun\Application\Admin\Controller\UserController.class.php 第 10 行.
+NOTIC: [8] Undefined variable: condition C:\Users\Administrator\Desktop\kaixun\Application\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SELECT * FROM `kaixun_user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-04T13:17:16+08:00 ] 127.0.0.1 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_user` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Library\Think\Db\Driver.class.php 第 550 行.
+NOTIC: [8] Undefined offset: 0 C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+SQL: SELECT * FROM `kaixun_user` WHERE ( `user_status` = null  ) LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:18:03+08:00 ] 127.0.0.1 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_user` WHERE `user_status` <> 3 LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:19:46+08:00 ] 127.0.0.1 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_user` WHERE `user_status` <> 3 LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:19:51+08:00 ] 127.0.0.1 /Admin/User/changeStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0010s ]
+SQL: UPDATE `kaixun_user` SET `user_status`='1' WHERE `user_id` = 6 [ RunTime:0.0000s ]
+
+[ 2016-06-04T13:19:51+08:00 ] 127.0.0.1 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0020s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_user` WHERE `user_status` <> 3 LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:20:14+08:00 ] 127.0.0.1 /Admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0040s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0320s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  ORDER BY order_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant order_num - assumed 'order_num' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 215 行.
+NOTIC: [8] Use of undefined constant order_num - assumed 'order_num' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 215 行.
+NOTIC: [8] Undefined variable: page C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 229 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:20:20+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0020s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:20:35+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0020s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0030s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:21:36+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0020s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Common\functions.php:850) C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Common\functions.php:850) C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Common\functions.php:850) C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2016-06-04T13:21:43+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0040s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0030s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Common\functions.php:850) C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Common\functions.php:850) C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Common\functions.php:850) C:\Users\Administrator\Desktop\kaixun\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:22:05+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0030s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-04T13:23:14+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0020s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0020s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:24:45+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-04T13:26:32+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: order_num C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 169 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:26:37+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:26:55+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0020s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:26:57+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:26:58+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:26:58+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0020s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-06-04T13:26:58+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0040s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:26:58+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:26:58+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:26:59+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:26:59+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:26:59+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:26:59+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0020s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:27:00+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:27:00+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:27:00+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:27:00+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0050s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-04T13:27:01+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:27:01+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0020s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:27:09+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0040s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-04T13:27:12+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:27:13+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-06-04T13:27:13+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:27:13+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:27:13+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:27:25+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0020s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: order_num C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 169 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:27:28+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:27:36+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.3840s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0950s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'order_num' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 168 行.
+NOTIC: [2] Illegal string offset 'order_num' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 168 行.
+NOTIC: [2] Illegal string offset 'order_num' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 168 行.
+NOTIC: [2] Illegal string offset 'order_num' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 168 行.
+NOTIC: [2] Illegal string offset 'order_num' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 168 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:27:52+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031  [ RunTime:0.0010s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-04T13:27:56+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031  [ RunTime:0.0010s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:28:06+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0020s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031  [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:28:08+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031  [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:28:42+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0020s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031  [ RunTime:0.0010s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-04T13:29:25+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031  [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-04T13:29:37+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0030s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031  [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-04T13:30:01+08:00 ] 127.0.0.1 /Admin/Order/order/num/1464758031.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0040s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_order` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kaixun_order` WHERE `order_num` = 1464758031  [ RunTime:0.0000s ]
+SQL: SELECT `order_id`,`order_num`,`order_sum`,`order_time`,`user_account`,`user_name`,`user_phone`,`user_address` FROM `kaixun_order` INNER JOIN kaixun_user ON kaixun_order.user_id = kaixun_user.user_id  WHERE `order_num` = '1464758031' ORDER BY order_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_record` INNER JOIN kaixun_product ON kaixun_record.product_id = kaixun_product.product_id  WHERE `order_num` = '1464758031'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_img` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+NOTIC: [8] Undefined index: product C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\a64e937f36419d4a7777cf289b4f6414.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

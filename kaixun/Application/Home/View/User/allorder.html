@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xml:lang="zh-CN">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" /> 
+  <meta charset="UTF-8" /> 
+  <title>订单列表</title> 
+  <meta name="viewport" content="width=1226" /> 
+  <meta name="description" content="" /> 
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/base.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/main.min.css" /> 
+  <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/top_slide.js"></script> 
+  <script type="text/javascript" src="__PUBLIC__/Home/js/left_slide.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/layer/layer.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/address.js"></script>
+  <script type="text/javascript">
+  window.check = '{:U("Base/check")}';
+  window.url_index = '{:U("Index/index")}';
+  window.getUser = '{:U("User/getUser")}';
+  window.changeAddress = '{:U("User/changeAddress")}';
+  </script>
+ </head> 
+ <body> 
+  <block name="menu"><include file="Base:top1" /></block> 
+  <block name="left"><include file="Base:header" /></block> 
+  <block name="main">
+    <div class="breadcrumbs"> 
+     <div class="container"> 
+      <a href="{:U('Index/index')}" data-stat-id="b0bcd814768c68cc">首页</a>
+      <span class="sep">&gt;</span>
+      <span>我的订单</span> 
+     </div> 
+    </div> 
+    <div class="page-main user-main"> 
+     <div class="container"> 
+      <div class="row"> 
+       <block name="right"><include file="Base:left" /></block>  
+       <div class="span16"> 
+        <div class="uc-box uc-main-box"> 
+         <div class="uc-content-box order-list-box"> 
+          <div class="box-hd"> 
+           <h1 class="title">我的订单<small>请谨防钓鱼链接或诈骗电话</small></h1> 
+         
+          </div> 
+          <div class="box-bd"> 
+           <div id="J_orderList">
+            <ul class="order-list">
+              <volist name="order" id="vo">
+               <li class="uc-order-item uc-order-item-finish"> 
+                <div class="order-detail">  
+                 <table class="order-detail-table"> 
+                  <thead> 
+                   <tr> 
+                    <th class="col-main"> <p class="caption-info">{$vo.order_time|date='y-m-d H:i:s',###}<span class="sep">|</span>{$vo.user_name}<span class="sep">|</span>订单号：<a href="{:U('User/order',array('num' => $vo[order_id]))}">{$vo.order_num}</a></p> </th> 
+                    <th class="col-sub"> <p class="caption-price">订单金额：<span class="num">{$vo.order_sum}</span>元</p> </th> 
+                   </tr> 
+                  </thead> 
+                  <tbody> 
+                   <tr> 
+                    <td class="order-items"> 
+                     <ul class="goods-list">
+                      
+                      <a href="{:U('User/order',array('num' => $vo[order_id]))}" class="btn btn-line-gray" style="margin-left:300px">点击查看完整订单</a> 
+                     </ul> </td> 
+                   </tr> 
+                  </tbody> 
+                 </table> 
+                </div> </li>
+              </volist>
+            </ul>
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      
+     </div> 
+    </div>
+  </block>
+  <block name="footer"><include file="Base:footer" /></block>  
+ </body>
+</html>

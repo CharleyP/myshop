@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/bootstrap.min.js"></script>  
+    <script src="__PUBLIC__/Admin/js/app.min.js"></script>
+    <script src="__PUBLIC__/Admin/js/demo.js"></script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/Admin/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/Admin/dist/css/skins/_all-skins.min.css">
+    <style type="text/css">
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    .content-wrapper{
+      background: #fff;
+    }
+    .banner-list{
+      margin-top:20px;
+      border:1px solid #ccc;
+    }
+    .banner-list ul li{
+      list-style-type: none;
+      width: 200px;
+      height: 200px;
+      position: relative;
+      margin: 5px;
+      float: left;
+    }
+    .banner-list ul li img{
+      width: 200px;
+      height: auto;
+    }
+    .banner-list ul li span{
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      cursor: pointer;
+    }
+    </style>
+    <script type="text/javascript">
+    $(function(){
+      //删除图片
+      $('.img-one span.delete').click(function(event) {
+        var img_id = $(this).siblings('.img-id').val();
+        $.ajax({
+          url: '{:U("Banner/deleteBanner")}',
+          type: 'POST',
+          dataType: 'json',
+          data: {id: img_id},
+          success:function(data){
+            if (data['status'] == 1) {
+              window.location.reload();
+            };
+          },
+          error:function(data){
+            alert('服务器错误');
+          },
+        })
+      });
+      //
+      $(".add-img .submitImg").click(function(event) {
+        $.ajax({
+          url: '{:U("Banner/upload")}',
+          type: 'POST',
+          dataType: 'json',
+          success:function(data){
+            if (data['status'] == 1) {
+              window.location.reload();
+            };
+          },
+          error:function(){},
+        })
+      });
+    })
+    </script>
+  </head>
+  <body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+      <block name="menu"><include file="Base:header"/></block>
+      <block name="left"><include file="Base:left"/></block>
+      <block name="main">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1 banner-list">
+              <ul>
+                <volist name="bannerList" id="vo">
+                  <li class="img-one">
+                    <input type="hidden" value="{$vo.banner_id}" class="img-id" />
+                    <img src="{$vo.banner_url}">
+                    <span class="glyphicon glyphicon-trash delete" aria-hidden="true"></span>
+                  </li>
+                </volist>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="add_img col-md-7 col-md-offset-2">
+              <form action="{:U('Banner/upload')}" enctype="multipart/form-data" method="POST" >
+                <div class="col-md-3 text-right">添加图片：</div>
+                <div class="col-md-5"><input type="file" name="img"/></div>
+                <input type="hidden" value="1" name="status" />
+                <div class="col-md-2"><input type="submit" value="上传" class="submitImg" ></div>
+              </form>
+            </div>
+          </div>
+          
+        </div>
+      </block>
+      <block name="footer"><include file="Base:footer"/></block>
+    </div>
+  </body>
+</html>

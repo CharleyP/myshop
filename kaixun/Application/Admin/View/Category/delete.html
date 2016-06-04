@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/bootstrap.min.js"></script>  
+    <script src="__PUBLIC__/Admin/js/app.min.js"></script>
+    <script src="__PUBLIC__/Admin/js/demo.js"></script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
+    <link rel="stylesheet" href="__PUBLIC__/Admin/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/Admin/dist/css/skins/_all-skins.min.css">
+    <style type="text/css">
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    .content-wrapper{
+      background: #fff;
+    }
+    .span2 ul li{
+    	list-style-type: none;
+    	margin: 10px 0px;
+    }
+    .category-nav .category1{
+    	font-size: 18px;
+    	color: #000;
+    }
+    .category-nav .category2 a{
+    	font-size: 16px;
+    }
+    .category-nav .category2 a:hover{
+    	color: #000;
+    }
+    .category-nav .treeview-menu{
+    	margin-left: 40px;
+    }
+    </style>
+    <script type="text/javascript">
+    $(function(){
+		$(".treeview .treeview-menu").hide();
+    	$(".treeview a.category1").click(function(event) {
+			$(this).siblings('.treeview-menu').slideToggle();
+		});
+		//删除一级栏目
+		$(".ca1 .operation .delete").click(function(event) {
+			var category1_id = $(this).parents(".ca-1").find('.hidden').val();
+			if (confirm('删除将导致该栏目下所有内容清空，你确认删除吗？')) {
+				$.ajax({
+				url: '{:U("Category/deleteCategory1")}',
+				type: 'POST',
+				dataType: 'json',
+				data: {
+					id: category1_id,
+				},
+				success:function(data){
+					if (data['status'] == 1) {
+						
+					};
+				},
+				error:function(){
+					alert('服务器错误');
+				},
+			})
+			};
+		});
+		//删除二级栏目
+		$(".ca2 .operation .delete").click(function(event) {
+			var category2_id = $(this).parents(".ca-2").find('.hidden').val();
+			if (confirm('删除将导致该栏目下所有内容清空，你确认删除吗？')) {
+				$.ajax({
+				url: '{:U("Category/deleteCategory2")}',
+				type: 'POST',
+				dataType: 'json',
+				data: {
+					id: category2_id,
+				},
+				success:function(data){
+					if (data['status'] == 1) {
+						
+					};
+				},
+				error:function(){
+					alert('服务器错误');
+				},
+			})
+			};
+		});
+    })
+    </script>
+  </head>
+  <body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+      <block name="menu"><include file="Base:header"/></block>
+      <block name="left"><include file="Base:left"/></block>
+      <block name="main">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1" >
+				<div class="row">
+				<div class="col-md-6 span2 ca1">
+					<h2>一级栏目管理</h2>
+					<div class="category-nav">
+						<div class="active treeview">
+					      <a href="javascript:void(0)" class="category1">
+					        <span class="glyphicon glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;一级栏目列表
+					      </a>
+					      <ul class="treeview-menu">
+					      	<volist name="category" id="vo">
+						      	<li class="category2 ca-1">
+						        	<div class="row">
+						        		<div class="col-md-6 category1_name">
+						        			<input type="text" class="form-control c1_name" value="{$vo.category1_name}" required="required" disabled='true'>
+						        			<input type="hidden" name=""class="form-control hidden" value="{$vo.category1_id}">
+						        		</div>
+						        		<div class="col-md-5 operation">
+						        			<button type="button" class="btn btn-default btn-xs delete" aria-label="Left Align" data-toggle="tooltip" data-placement="right" title="删除" style="margin-left:5px;"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+						        		</div>
+						        	</div>
+						        </li>
+					      	</volist>
+					      </ul>
+					    </div>
+					</div>
+				</div>
+				<div class="col-md-6 span2 ca2">
+					<h2>二级栏目管理</h2>
+					    <volist name="category" id="vo">
+						    <div class="active treeview">
+						      <a href="javascript:void(0)" class="category1">
+						        <span class="glyphicon glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>&nbsp;{$vo.category1_name}
+						      </a>
+						      <ul class="treeview-menu">
+						      	<volist name="vo['getCategory2']" id="vo2">
+							      	<li class="category2 ca-2">
+							        	<div class="row">
+							        		<div class="col-md-6 category2_name">
+							        			<input type="text" class="form-control c2_name" value="{$vo2.category2_name}" required="required" disabled='true'>
+						        				<input type="hidden" name=""class="form-control hidden" value="{$vo2.category2_id}">
+							        		</div>
+							        		<div class="col-md-5 operation">
+						        				<button type="button" class="btn btn-default btn-xs delete" aria-label="Left Align" data-toggle="tooltip" data-placement="right" title="删除" style="margin-left:5px;"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+							        		</div>
+							        	</div>
+							        </li>
+						      	</volist>
+						      </ul>
+						    </div>
+					    </volist>
+					</div>
+				</div>
+            </div>
+          </div>
+        </div>
+      </block>
+      <block name="footer"><include file="Base:footer"/></block>
+    </div>
+  </body>
+</html>

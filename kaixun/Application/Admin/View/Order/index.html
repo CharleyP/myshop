@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/bootstrap.min.js"></script>  
+    <script src="__PUBLIC__/Admin/js/app.min.js"></script>
+    <script src="__PUBLIC__/Admin/js/demo.js"></script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/Admin/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/Admin/dist/css/skins/_all-skins.min.css">
+    <style type="text/css">
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    .content-wrapper{
+      background: #fff;
+    }
+    .page{
+      width: 200px;
+      margin: 50px auto 10px;  
+    }
+    .page a{
+      padding: 0px 5px;
+      border: 1px solid #000;
+      margin-left: 5px;
+      text-decoration: none;
+      color: #000;
+    }
+    .page a:hover{
+      color: red;
+      border: 1px solid red;
+    }
+    .page span{
+      color: red;
+      padding: 0px 5px;
+      border: 1px solid red;
+      margin-left: 5px;
+    }
+    </style>
+    <script type="text/javascript">
+    $(function(){
+      $(".content-wrapper table tr .delete").click(function(event) {
+        var id = $(this).parent().find('.hidden').val();
+        $.ajax({
+          url: '{:U("Product/delete")}',
+          type: 'POST',
+          dataType: 'json',
+          data: {product_id: id},
+          success:function(data){
+            if (data['status'] == 1) {
+              window.location.reload();
+            };
+          },
+          error:function(data){alert('服务器错误')},
+        })
+      });
+    })
+    </script>
+  </head>
+  <body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+      <block name="menu"><include file="Base:header"/></block>
+      <block name="left"><include file="Base:left"/></block>
+      <block name="main">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1" style="margin-top:20px;">
+              <div class="box box-primary">
+                <div class="box-header with-border">
+                  <h3 class="box-title">订单列表</h3>
+                  <div class="box-tools pull-right">
+                    <div class="has-feedback">
+                      <input type="text" class="form-control input-sm" placeholder="查找订单">
+                      <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </div>
+                  </div><!-- /.box-tools -->
+                </div><!-- /.box-header -->
+                <div class="box-body no-padding">
+                  <div class="table-responsive mailbox-messages">
+                    <table class="table table-hover table-striped">
+                      <thead>
+                        <td class="text-center">订单号</td>
+                        <td class="text-center">用户账号</td>
+                        <td class="text-center">昵称</td>
+                        <td class="text-center">手机号</td>
+                        <td class="text-center">地址</td>
+                        <td class="text-center">订单金额</td>
+                        <td class="text-center">订单时间</td>
+                      </thead>
+                      <tbody>
+                        <volist name="list" id="vo">
+                          <tr>
+                            <td class="text-center"><a href="{:U('Order/order',array('num'=>$vo[order_num]))}">{$vo.order_num}</a></td>
+                            <td class="text-center">{$vo.user_account}</td>
+                            <td class="text-center">{$vo.user_name}</td>
+                            <td class="text-center">{$vo.user_phone}</td>
+                            <td class="text-center">{$vo.user_address}</td>
+                            <td class="text-center">{$vo.order_sum}元</td>
+                            <td class="text-center">{$vo.order_time|date='y-m-d H:i:s',###}</td>
+                          </tr>
+                        </volist>
+                      </tbody>
+                    </table><!-- /.table -->
+                  </div><!-- /.mail-box-messages -->
+                </div><!-- /.box-body -->
+                <div class="box-footer no-padding">
+                  <div class="page">
+                    {$page}
+                  </div>
+                </div>
+              </div><!-- /. box -->
+            </div><!-- /.col -->
+          </div>
+        </div>
+      </block>
+      <block name="footer"><include file="Base:footer"/></block>
+    </div>
+  </body>
+</html>

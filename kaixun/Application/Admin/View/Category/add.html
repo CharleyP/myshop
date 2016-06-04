@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/bootstrap.min.js"></script>  
+    <script src="__PUBLIC__/Admin/js/app.min.js"></script>
+    <script src="__PUBLIC__/Admin/js/demo.js"></script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
+    <link rel="stylesheet" href="__PUBLIC__/Admin/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/Admin/dist/css/skins/_all-skins.min.css">
+    <style type="text/css">
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    .content-wrapper{
+      background: #fff;
+    }
+    .span2 ul li{
+    	list-style-type: none;
+    	margin: 10px 0px;
+    }
+    </style>
+    <script type="text/javascript">
+    $(function(){
+    	$('.ca1 .ca1-submit').click(function(event) {
+    		var category1_name = $(this).parents('.category1').find('.get-content input').val();
+    		$.ajax({
+    			url: '{:U("Category/addCategory1")}',
+    			type: 'POST',
+    			dataType: 'json',
+    			data: {name: category1_name},
+    			success:function(data){
+    				if (data['status'] == 1) {
+    					
+    				};
+    			},
+    			error:function(data){
+    				alert('服务器错误');
+    			}
+    		})
+    	});
+    	$('.ca2 .category2 .ca2-submit').click(function(event) {
+    		var category1_id = $(this).parents('.category2').find('select').val();
+    		var category2_name = $(this).parents('.category2').find('input').val();
+    		if (category1_id != '') {
+    			$.ajax({
+    			url: '{:U("Category/addCategory2")}',
+    			type: 'POST',
+    			dataType: 'json',
+    			data: {
+    				name: category2_name,
+    				id: category1_id,
+    			},
+    			success:function(data){
+    				if (data['status'] == 1) {
+    					
+    				};
+    			},
+    			error:function(data){
+    				alert('服务器错误');
+    			}
+    		})
+    		};
+    	});
+    })
+    </script>
+  </head>
+  <body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+      <block name="menu"><include file="Base:header"/></block>
+      <block name="left"><include file="Base:left"/></block>
+      <block name="main">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1" style="margin-top:80px;" >
+				<div class="row">
+				<div class="col-md-6 span2 ca1">
+					<div class="active treeview add-category1">
+				      <h2>添加一级栏目</h2>
+				      <ul class="treeview-menu">
+				      	<li class="category1">
+				        	<div class="row">
+				        		<div class="col-md-6 get-content">
+				        			<input type="text" class="form-control" value="">
+				        		</div>
+				        		<div class="col-md-5">
+									<a href="javascript:void(0)" class="btn btn-success ca1-submit">添加</a>
+				        		</div>
+				        	</div>
+				        </li>
+				      </ul>
+				    </div>
+				</div>
+				<div class="col-md-6 span2 ca2">
+					 	<h2>添加二级栏目</h2>
+					      <ul class="treeview-menu">
+					      	<li class="category2">
+					        	<div class="row">
+					        		<div class="col-md-6">
+					                    <div class="form-group chose-category1">
+					                      <select class="form-control input-md">
+					                      	<option value="">选择一级栏目</option>
+					                      	<volist name="category" id="vo">
+					                      		<option value="{$vo.category1_id}">{$vo.category1_name}</option>
+					                      	</volist>
+					                      </select>
+					                   </div>
+					                   <input type="text" id="input" class="form-control" value="">
+					        		</div>
+					        		<div class="col-md-5">
+										<a href="javascript:void(0)" class="btn btn-success ca2-submit">添加</a>
+				        			</div>
+					        	</div>
+					        </li>
+					      </ul>
+					    </div>
+					</div>
+				</div>
+				</div>
+            </div>
+          </div>
+        </div>
+      </block>
+      <block name="footer"><include file="Base:footer"/></block>
+    </div>
+  </body>
+</html>

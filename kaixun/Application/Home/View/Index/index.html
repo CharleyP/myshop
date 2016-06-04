@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xml:lang="zh-CN">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" /> 
+  <meta charset="UTF-8" /> 
+  <title>凯训线材-专卖网站</title> 
+  <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/top_slide.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/index.js"></script> 
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/base.min.css" /> 
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/index.min.css" />
+ </head> 
+ <body>
+   <block name="menu"><include file="Base:top1" /></block>
+   <block name="left"><include file="Base:header" /></block>
+   <block name="main">
+    <div class="home-hero-container container"> 
+     <div class="home-hero"> 
+      <div class="home-hero-slider"> 
+       <div class="ui-wrapper" style="max-width: 100%;">
+        <div class="ui-viewport" style="width: 100%; overflow: hidden; position: relative; height: 460px;">
+         <div id="J_homeSlider" class="xm-slider" data-stat-title="焦点图轮播" style="width: auto; position: relative;"> 
+          <volist name="banner" id="vo4">
+            <div class="slide loaded"  style="float: none; list-style: none; position: absolute; width: 1226px; z-index: 0; display: none;"> 
+             <a href="" target="_blank" ><img src="{$vo4.banner_url}"/></a> 
+            </div>
+          </volist>
+         </div>
+        </div>
+        <div class="ui-controls ui-has-pager ui-has-controls-direction">
+         <div class="ui-pager ui-default-pager">
+          <div class="ui-pager-item">
+           <a href="javascript:void(0)" data-slide-index="0" class="ui-pager-link active">1</a>
+          </div>
+          <div class="ui-pager-item">
+           <a href="javascript:void(0)" data-slide-index="1" class="ui-pager-link">2</a>
+          </div>
+          <div class="ui-pager-item">
+           <a href="javascript:void(0)" data-slide-index="2" class="ui-pager-link">3</a>
+          </div>
+          <div class="ui-pager-item">
+           <a href="javascript:void(0)" data-slide-index="3" class="ui-pager-link">4</a>
+          </div>
+          <div class="ui-pager-item">
+           <a href="javascript:void(0)" data-slide-index="4" class="ui-pager-link">5</a>
+          </div>
+         </div>
+         <!-- <div class="ui-controls-direction">
+          <a class="ui-prev" href="javascript:void(0)" >上一张</a>
+          <a class="ui-next" href="javascript:void(0)" >下一张</a>
+         </div> -->
+        </div>
+       </div> 
+      </div> 
+     </div> 
+     <div class="home-star-goods xm-carousel-container" id="J_homeStar"> 
+      <div class="xm-plain-box"> 
+       <div class="box-hd"> 
+        <h2 class="title">销量排行</h2> 
+        <div class="more">
+         <div class="xm-controls xm-controls-line-small xm-carousel-controls">
+          <a class="control control-prev iconfont control-disabled" href="javascript: void(0);"></a>
+          <a class="control control-next iconfont" href="javascript: void(0);"></a>
+         </div>
+        </div> 
+       </div> 
+       <div class="box-bd"> 
+        <div class="xm-carousel-wrapper" style="height: 340px; overflow: hidden;">
+         <ul class="xm-carousel-list xm-carousel-col-5-list goods-list rainbow-list clearfix J_carouselList" style="width: 2480px; margin-left: 0px; transition: margin-left 0.5s ease;"> 
+          <volist name="selling" id="vo">
+            <li class="rainbow-item-1"> <a class="thumb" href="{:U('Index/artical',array('id' => $vo[product_id]))}" target="_blank" ><img src="{$vo.product_img}"  alt="{$vo.product_name}" height="100%" /></a> <h3 class="title"><a target="_blank">{$vo.product_name}</a></h3> <p class="desc">{$vo.product_specifications}</p> <p class="price">0元</p> </li>
+          </volist>
+         </ul>
+        </div> 
+       </div> 
+      </div> 
+     </div>
+    </div> 
+    <div class="page-main home-main"> 
+     <div class="container"> 
+      <div id="match" class="home-brick-box home-brick-row-2-box xm-plain-box J_itemBox J_brickBox is-visible loaded" data-from-stat="true" data-region-stat="1"> 
+       <div class="box-hd"> 
+        <h2 class="title">搭配</h2> 
+        <div class="more J_brickNav">
+         <ul class="tab-list J_brickTabSwitch" data-tab-target="match-content">
+          <volist name="wire" id="vo">
+            <li>{$vo.category2_name}</li>
+          </volist>
+         </ul>
+        </div> 
+       </div> 
+       <div class="box-bd J_brickBd">
+        <div class="row">
+         <div class="span4 span-first">
+          <ul class="brick-promo-list clearfix"> 
+              <li class="brick-item brick-item-m"> <a href="javascript:void(0)" target="_blank"><img src="__PUBLIC__/Home/img/logo1.jpg" width="160" height="160" alt="{$vo.category2_name}"/></a> </li>
+              <li class="brick-item brick-item-m"> <a href="javascript:void(0)" target="_blank"><img src="__PUBLIC__/Home/img/logo2.jpg" width="160" height="160" alt="{$vo.category2_name}"/></a> </li>
+          </ul>
+         </div>
+         <div class="span16">
+          <div id="match-content" class="tab-container">
+            <volist name="wire" id="vo">
+              <ul class="brick-list tab-content clearfix tab-content-hide">  
+                <volist name="vo['pro']" id="vo2">
+                  <li class="brick-item brick-item-m"> 
+                 <div class="figure figure-img"> 
+                  <a href="{:U('Index/artical',array('id' => $vo2[product_id]))}" ><img src="{$vo2.product_img}" width="150" height="150" alt="{$vo2.product_name}" /></a> 
+                 </div> <h3 class="title"> <a href="{:U('Index/artical',array('id' => $vo2[product_id]))}" >{$vo2.product_name} </a></h3> <p class="price"> <span class="num">0</span>元 </p> <h3 class="title"> <a>{$vo2.product_specifications} </a></h3>
+                 <div class="review-wrapper"> 
+                  <a href="{:U('Index/artical',array('id' => $vo2[product_id]))}"> <span class="review">{$vo2.product_info}</span></a> 
+                 </div> </li> 
+                </volist>
+              </ul>
+            </volist>
+          </div>
+         </div>
+        </div>
+       </div> 
+      </div> 
+      <div id="recommend" class="home-recm-box home-brick-box home-brick-row-1-box xm-plain-box J_itemBox J_recommendBox is-visible" data-region-stat="1"> 
+       <div class="box-hd"> 
+        <h2 class="title">最新产品</h2> 
+        <div class="more J_brickNav">
+         <div class="xm-controls xm-controls-line-small xm-carousel-controls">
+          <a class="control control-prev iconfont sell_prev" href="javascript: void(0);"></a>
+          <a class="control control-next iconfont sell_next" href="javascript: void(0);"></a>
+         </div>
+        </div> 
+       </div> 
+       <div id="recommend-bd" class="box-bd J_brickBd J_recommend-like container xm-carousel-container">
+        <div class="xm-recommend">
+         <div class="xm-carousel-wrapper" style="height: 330px; overflow: hidden;">
+          <ul class="xm-carousel-col-5-list xm-carousel-list clearfix" data-carousel-list="true" style="width: 4960px; margin-left: 0px; transition: margin-left 0.5s ease;"> 
+            <volist name="new_list" id="vo">
+            <li class="J_xm-recommend-list"> 
+              <dl> 
+             <dt> 
+              <a href="{:U('Index/artical',array('id'=>$vo[product_id]))}"> <img src="{$vo.product_img}" alt="{$vo.product_name}" style="height:100%" /> </a> 
+             </dt> 
+             <dd class="xm-recommend-name"> 
+              <a href="{:U('Index/artical',array('id'=>$vo[product_id]))}" target="_blank"> {$vo.product_name} </a> 
+             </dd> 
+             <dd class="xm-recommend-price">
+              0元
+             </dd> 
+             <dd class="xm-recommend-tips">
+               {$vo.product_specifications} 
+             </dd> 
+              </dl>
+            </li> 
+            </volist>
+          </ul>
+         </div>
+        </div>
+       </div> 
+      </div> 
+    </div>   
+   </block>
+  <block name="footer"><include file="Base:footer" /></block>
+ </body>
+</html>

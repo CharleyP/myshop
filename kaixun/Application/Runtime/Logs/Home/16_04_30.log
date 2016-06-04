@@ -1,0 +1,808 @@
+[ 2016-04-30T13:10:55+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_category1` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `kaixun_category1`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='1' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='2' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='3' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='4' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='5' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='6' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE `category2_show` = 1 LIMIT 7   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='1' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='2' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='3' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='4' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='5' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='6' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='7' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_product` ORDER BY product_id desc LIMIT 15   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0040s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='36' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='35' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='34' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='33' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='32' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='30' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='29' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='28' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='25' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='24' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='23' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='22' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sell_list C:\Users\Administrator\Desktop\kaixun\Application\Home\Controller\IndexController.class.php 第 27 行.
+SQL: SELECT * FROM `kaixun_category1` WHERE `category1_name` = '线材' LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT `category2_name`,`category2_id` FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='1' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='3' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='5' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category1` WHERE `category1_name` = '监控器材' LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name`,`category2_id` FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='2' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='7' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='8' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='9' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='11' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='12' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='13' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='14' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-30T13:10:55+08:00 ] 127.0.0.1 /index.php/Home/Index/buy_num.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_record` WHERE `record_status` = 1 AND `order_num` = 12345 AND `user_id` = null LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-30T13:10:55+08:00 ] 127.0.0.1 /index.php/Home/Base/check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-30T13:10:55+08:00 ] 127.0.0.1 /index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-30T22:41:01+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_category1` [ RunTime:0.5980s ]
+SQL: SELECT * FROM `kaixun_category1`  [ RunTime:0.0490s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.1080s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='1' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='2' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='3' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='4' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='5' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='6' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE `category2_show` = 1 LIMIT 7   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.1060s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='1' )  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='2' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='3' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='4' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='5' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='6' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='7' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` ORDER BY product_id desc LIMIT 15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.2340s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='36' ) LIMIT 1   [ RunTime:0.0450s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='35' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='34' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='33' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='32' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='30' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='29' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='28' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='25' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='24' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='23' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='22' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sell_list C:\Users\Administrator\Desktop\kaixun\Application\Home\Controller\IndexController.class.php 第 27 行.
+SQL: SELECT * FROM `kaixun_category1` WHERE `category1_name` = '线材' LIMIT 8   [ RunTime:0.0100s ]
+SQL: SELECT `category2_name`,`category2_id` FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='1' )  [ RunTime:0.0200s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category1` WHERE `category1_name` = '监控器材' LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name`,`category2_id` FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='2' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='7' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='8' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='9' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='11' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='12' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='13' ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='14' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.479017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.479017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.479017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.479017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-30T22:41:03+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_category1` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `kaixun_category1`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='1' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='2' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='3' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='4' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='5' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='6' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE `category2_show` = 1 LIMIT 7   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='1' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='2' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='3' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='4' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='5' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='6' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='7' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_product` ORDER BY product_id desc LIMIT 15   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0040s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='36' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='35' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='34' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='33' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='32' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='30' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='29' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='28' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='25' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='24' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='23' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='22' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: sell_list C:\Users\Administrator\Desktop\kaixun\Application\Home\Controller\IndexController.class.php 第 27 行.
+SQL: SELECT * FROM `kaixun_category1` WHERE `category1_name` = '线材' LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name`,`category2_id` FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='1' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category1` WHERE `category1_name` = '监控器材' LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name`,`category2_id` FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='2' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='7' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='8' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='9' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 6  [ RunTime:0.0010s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='11' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='12' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 7  [ RunTime:0.0010s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='13' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='14' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-30T22:41:11+08:00 ] 127.0.0.1 /index.php/Home/Index/buy_num.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.1980s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_record` WHERE `record_status` = 1 AND `order_num` = 12345 AND `user_id` = null LIMIT 1   [ RunTime:0.4020s ]
+
+[ 2016-04-30T22:41:11+08:00 ] 127.0.0.1 /index.php/Home/Base/check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-30T22:41:12+08:00 ] 127.0.0.1 /index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-30T23:11:22+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `kaixun_category1` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `kaixun_category1`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='1' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='2' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='3' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='4' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='5' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='6' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE `category2_show` = 1 LIMIT 7   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='1' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='2' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='3' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='4' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='5' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='6' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_product` WHERE ( 1=1 AND category2_id='7' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` ORDER BY product_id desc LIMIT 15   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_img` [ RunTime:0.0030s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='36' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='35' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='34' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='33' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='32' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='31' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='30' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='29' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='28' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='26' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='25' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='24' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='23' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='22' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: sell_list C:\Users\Administrator\Desktop\kaixun\Application\Home\Controller\IndexController.class.php 第 27 行.
+SQL: SELECT * FROM `kaixun_category1` WHERE `category1_name` = '线材' LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name`,`category2_id` FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='1' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 3  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='5' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category1` WHERE `category1_name` = '监控器材' LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name`,`category2_id` FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='2' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='7' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='8' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='9' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='10' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='11' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='12' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_product` WHERE `category2_id` = 7  [ RunTime:0.0010s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='13' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `img_url` FROM `kaixun_img` WHERE ( 1=1 AND product_id='14' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant category2_id - assumed 'category2_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 138 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 282 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 285 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.139008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.139008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015001s ]
+
+[ 2016-04-30T23:11:23+08:00 ] 127.0.0.1 /index.php/Home/Index/buy_num.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kaixun_record` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_record` WHERE `record_status` = 1 AND `order_num` = 12345 AND `user_id` = null LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-30T23:11:23+08:00 ] 127.0.0.1 /index.php/Home/Base/check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-30T23:11:23+08:00 ] 127.0.0.1 /index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

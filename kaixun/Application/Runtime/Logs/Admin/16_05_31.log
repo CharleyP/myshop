@@ -1,0 +1,193 @@
+[ 2016-05-31T14:01:27+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-31T14:01:28+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.165003s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.165003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.482507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.485007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.037501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.037501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.135002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.135002s ]
+
+[ 2016-05-31T14:01:31+08:00 ] 127.0.0.1 /Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-31T14:01:55+08:00 ] 127.0.0.1 /Admin/Login/loginCheck.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0624s ]
+SQL: SELECT * FROM `kaixun_user` WHERE `user_account` = 'junchao' LIMIT 1   [ RunTime:0.0156s ]
+
+[ 2016-05-31T14:01:57+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-31T14:01:57+08:00 ] 127.0.0.1 /Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-05-31T14:02:06+08:00 ] 127.0.0.1 /Admin/Login/loginCheck.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002501s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_user` WHERE `user_account` = 'junchao' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-05-31T14:02:06+08:00 ] 127.0.0.1 /Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0075s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `kaixun_product` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_product` LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `kaixun_product` LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0075s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='4' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `category2_name` FROM `kaixun_category2` WHERE ( 1=1 AND category2_id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+NOTIC: [8] Use of undefined constant product_id - assumed 'product_id' C:\Users\Administrator\Desktop\kaixun\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-05-31T14:05:30+08:00 ] 127.0.0.1 /Admin/Category/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0075s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_category1` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `kaixun_category1`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kaixun_category2` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='1' )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='2' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='3' )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='4' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='5' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kaixun_category2` WHERE ( 1=1 AND category1_id='6' )  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-05-31T14:05:42+08:00 ] 127.0.0.1 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `kaixun_user` [ RunTime:0.0075s ]
+SQL: SELECT `user_name`,`user_id` FROM `kaixun_user` WHERE ( user_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kaixun_user` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition C:\Users\Administrator\Desktop\kaixun\Application\Admin\Controller\UserController.class.php 第 10 行.
+NOTIC: [8] Undefined variable: condition C:\Users\Administrator\Desktop\kaixun\Application\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SELECT * FROM `kaixun_user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+

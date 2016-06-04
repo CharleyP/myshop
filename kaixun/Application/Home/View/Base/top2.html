@@ -1,0 +1,31 @@
+<div class="site-header site-mini-header"> 
+     <div class="container"> 
+      <div class="header-logo"> 
+       <a href="{:U('Index/index')}"><img src="__PUBLIC__/Home/img/logo.png" width="300px" height="60px" /> </a>
+      </div>
+      <div class="topbar-info" id="J_userInfo" style="display:block"> 
+       <a class="link" href="{:U('Login/index')}" data-needlogin="true" >登录</a>
+       <span class="sep">|</span>
+       <a class="link" href="{:U('Login/register')}" >注册</a> 
+      </div> 
+      <div class="topbar-info" id="J_userMsg" style="display:none">
+       <span class="user">
+         <a class="user-name" href="{:U('User/index')}" target="_blank">
+            <span class="name"> </span><i class="iconfont"></i>
+         </a>
+          <ul class="user-menu" style="display: none;">
+            <li><a href="{:U('User/index')}" target="_blank">个人中心</a></li>
+            <li><a href="{:U('Login/resetting')}" target="_blank">修改密码</a></li>
+            <li><a href="{:U('User/address')}" target="_blank">收货地址</a></li>
+            <li><a href="{:U('Login/logout')}">退出登录</a></li>
+          </ul>
+       </span>
+       <span class="sep">|</span>
+       <a class="link link-order" href="{:U('User/allorder')}" target="_blank">我的订单</a>
+     </div>
+     </div> 
+</div> 
+<script type="text/javascript" src="__PUBLIC__/Home/js/top1.js"></script>
+<script type="text/javascript">
+   window.check = '{:U("Base/check")}';
+</script>

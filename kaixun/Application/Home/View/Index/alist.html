@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xml:lang="zh-CN">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/top_slide.js"></script> 
+  <script type="text/javascript" src="__PUBLIC__/Home/js/left_slide.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" /> 
+  <meta charset="UTF-8" /> 
+  <title>凯训线材-商品列表</title> 
+  <meta name="viewport" content="width=1226" /> 
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/base.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/phone.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/login_main.css"> 
+  <script type="text/javascript" src="__PUBLIC__/Home/layer/layer.js"></script>
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/alist_add.css" />
+  <script type="text/javascript" src="__PUBLIC__/Home/js/index_alist.js"></script>
+  <script type="text/javascript">
+  window.addBuyMsg = '{:U("Order/addBuyMsg")}';
+  window.checkLogin = '{:U("Login/check")}';
+  </script>
+ </head> 
+ <body> 
+  <block name="menu"><include file="Base:top1" /></block>
+  <block name="left"><include file="Base:header" /></block>
+  <block name="main">
+    <div class="page-main channel buyphone-channel"> 
+     <!-- <div class="container breadcrumbs"> 
+      <a href="{:U('Index/index')}" >首页</a>
+      <span class="sep">/</span><volist name="alist_top_title" id="vo">{$vo.category2_name}</volist>
+     </div>  -->
+     <div class="container channel-nav"> 
+      <ul class="clearfix"> 
+        <volist name="ca2" id="vo">
+          <li><a href="{:U('Index/alist',array('cat' => $vo[category2_id]))}">{$vo.category2_name}</a></li>
+        </volist>
+      </ul> 
+     </div> 
+     <div class="container channel-list"> 
+      <ul class="row clearfix"> 
+        <volist name="alist" id="vo">
+          <li class="span5"> 
+            <div class="channel-list-img"> 
+             <a href="{:U('Index/artical',array('id'=>$vo[product_id]))}" target="_blank"><img src="{$vo.product_img}" alt="{$vo.product_name}" width="" height="100%"/></a> 
+            </div> 
+            <div class="channel-list-con clearfix"> 
+             <dl class="channel-list-des"> 
+              <dt>
+               <input type="hidden" value="{$vo.product_id}" />
+               <b style="color:#000" class="name">{$vo.product_name}<span style="color:#000">{$vo.product_specifications}</span></b> 
+               <b class="price">0</b>
+               <span>元</span> 
+              </dt> 
+              <dd>
+                {$vo.product_info} 
+              </dd> 
+             </dl> 
+             <p class="channel-list-btn"> <a href="javascript:void(0)" class="btn btn-line-primary" >加入购物车</a> </p> 
+            </div> </li>
+        </volist>
+      </ul> 
+     </div> 
+    </div>
+  </block>
+  <block name="footer"><include file="Base:footer" /></block> 
+ </body>
+</html>

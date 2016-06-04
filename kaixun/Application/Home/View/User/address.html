@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://order.mi.com/portal?r=41218.1458877857 -->
+<html lang="zh-CN" xml:lang="zh-CN">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" /> 
+  <meta charset="UTF-8" /> 
+  <title>收货地址</title> 
+  <meta name="viewport" content="width=1226" /> 
+  <meta name="description" content="" /> 
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/base.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/main.min.css" /> 
+  <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/top_slide.js"></script> 
+  <script type="text/javascript" src="__PUBLIC__/Home/js/left_slide.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/layer/layer.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/address.js"></script>
+  <script type="text/javascript">
+  window.check = '{:U("Base/check")}';
+  window.url_index = '{:U("Index/index")}';
+  window.getUser = '{:U("User/getUser")}';
+  window.changeAddress = '{:U("User/changeAddress")}';
+  </script>
+ </head> 
+ <body> 
+  <block name="menu"><include file="Base:top1" /></block>
+  <block name="left"><include file="Base:header" /></block>
+  <block name="main">
+    <div class="breadcrumbs"> 
+     <div class="container"> 
+      <a href="{:U('Index/index')}" data-stat-id="b0bcd814768c68cc">首页</a>
+      <span class="sep">&gt;</span>
+      <span>收货地址</span> 
+     </div> 
+    </div> 
+    <div class="page-main user-main"> 
+     <div class="container"> 
+      <div class="row"> 
+       <block name="right"><include file="Base:left" /></block>
+       <div class="span16"> 
+        <div class="uc-box uc-main-box"> 
+         <div class="uc-content-box"> 
+          <div class="box-hd"> 
+           <h1 class="title">收货地址</h1>  
+          </div> 
+          <div class="box-bd"> 
+           <div class="user-address-list J_addressList clearfix"> 
+            <div class="address-item J_addressItem"> 
+             <dl> 
+              <dt> 
+               <em class="uname" id="user_old_name">name</em> 
+              </dt> 
+              <dd class="utel" id="user_old_phone">
+               phone
+              </dd> 
+              <dd class="uaddress" id="user_old_address">
+                address
+              </dd> 
+             </dl> 
+             <div class="actions"> 
+              <a class="modify J_addressModify" data-id="10151012171941362" href="javascript:void(0);" data-stat-id="05bdb261c37afc34">修改</a>  
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      
+     </div> 
+    </div>
+  </block>
+  <block name="footer"><include file="Base:footer" /></block>
+  <style type="text/css">
+    .address-edit-box{
+      width: 274px;
+      display: block;
+      border: 1px solid red;
+      
+      background: #fff;
+    }
+    .address-edit-box .box-main{
+      height: 200px;
+      padding: 30px 20px 13px;
+    }
+    .form-section{
+      position: relative;
+      margin: 0 0 14px;
+      padding: 0;
+      border: 0;
+      text-align: left;
+    }
+    .input-label{
+      position: absolute;
+      left: 12px;
+      top: 11px;
+      z-index: 2;
+      padding: 0 30px;
+      font-size: 14px;
+      line-height: 18px;
+      color: #b0b0b0;
+      background: transparent;
+      cursor: text;
+    }
+    .form-confirm .btn-primary{
+      margin-left: 70px;
+    }
+    .form-confirm .btn{
+      float: left;
+      width: 130px;
+      height: 30px;
+      line-height: 30px;
+    }
+  </style>
+ </body>
+</html>

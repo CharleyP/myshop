@@ -1,0 +1,14 @@
+.span5{
+    height:auto;
+    padding-bottom:50px;
+  }
+  .span5 .channel-list-img{
+    width:100%;
+  }
+  .span5 .channel-list-con{
+    width:100%;
+    margin-left:0px;
+  }
+  .span5 .channel-list-con dl{
+    width:100%;
+  }

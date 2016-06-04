@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/bootstrap.min.js"></script>  
+    <script src="__PUBLIC__/Admin/js/app.min.js"></script>
+    <script src="__PUBLIC__/Admin/js/demo.js"></script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
+    <link rel="stylesheet" href="__PUBLIC__/Admin/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/Admin/dist/css/skins/_all-skins.min.css">
+    <style type="text/css">
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    .content-wrapper{
+      background: #fff;
+    }
+    .span2 ul li{
+    	list-style-type: none;
+    	margin: 10px 0px;
+    }
+    .category-nav .category1{
+    	font-size: 18px;
+    	color: #000;
+    }
+    .category-nav .category2 a{
+    	font-size: 16px;
+    }
+    .category-nav .category2 a:hover{
+    	color: #000;
+    }
+    .category-nav .treeview-menu{
+    	margin-left: 40px;
+    }
+    </style>
+    <script type="text/javascript">
+    $(function(){
+		$(".treeview .treeview-menu").hide();
+    	$(".treeview a.category1").click(function(event) {
+			$(this).siblings('.treeview-menu').slideToggle();
+		});
+		//设置一级栏目是否在主页显示
+		$(".treeview-menu .ca-1").each(function(index, el) {
+			var i = $(this).find('.check_show .show input').val();
+			if (i==1) {
+				$(this).find('.check_show .show .glyphicon').removeClass('glyphicon-star-empty').addClass('glyphicon-star');
+			}else{
+				$(this).find('.check_show .show .glyphicon').removeClass('glyphicon-star').addClass('glyphicon-star-empty');
+			}
+		});
+		//修改是否在主页显示状态
+		$('.treeview-menu .ca-1 .check_show .show').click(function(event) {
+			var id = $(this).parents('.ca-1').find('.category1_name .hidden').val();
+			var i = $(this).parents('.ca-1').find('.check_show .hidden').val();
+			if (i==0) {
+				$(this).find('span').removeClass('glyphicon-star-empty').addClass('glyphicon-star');
+				i=1;
+			}else{
+				$(this).find('span').removeClass('glyphicon-star').addClass('glyphicon-star-empty');
+				i=0;
+			}
+			$.ajax({
+				url: '{:U("Category/changeCategory1_status")}',
+				type: 'POST',
+				dataType: 'json',
+				data: {
+					category1_id: id,
+					status: i,
+				},
+				success:function(data){
+					if (data['status'] == 1) {
+						
+					};
+				},
+				error:function(){
+					alert('服务器错误');
+				},
+			})
+		});
+		//修改一级栏目名称
+		$(".treeview-menu .operation .change").click(function(event) {
+			var category1_id = $(this).parents(".ca-1").find('.hidden').val();
+			$(this).parents(".ca-1").find('.c1_name').attr('disabled', false);
+			$(this).parents(".ca-1").find('.operation .change span').removeClass('glyphicon-pencil').addClass('glyphicon-ok');
+			var tip = $(this).parents(".ca-1").find('.operation button').removeClass('change').addClass('sub');
+			$(this).parents(".ca-1").find('.operation .sub').click(function(event) {
+				var name = $(this).parents('.ca-1').find('.category1_name .c1_name').val();
+				$.ajax({
+					url: '{:U("Category/changeCategory1_name")}',
+					type: 'POST',
+					dataType: 'json',
+					data: {
+						category1_id: category1_id,
+						name: name,
+					},
+					success:function(data){
+						if (data['status'] == 1) {
+							
+							window.location.reload();
+						};
+					},
+					error:function(){
+						alert('服务器错误');
+					},
+				})
+			});
+		});
+
+		//修改二级栏目名称
+		$(".treeview-menu .operation .change").click(function(event) {
+			var category2_id = $(this).parents(".ca-2").find('.hidden').val();
+			$(this).parents(".ca-2").find('.c2_name').attr('disabled', false);
+			$(this).parents(".ca-2").find('.operation .change span').removeClass('glyphicon-pencil').addClass('glyphicon-ok');
+			var tip = $(this).parents(".ca-2").find('.operation button').removeClass('change').addClass('sub');
+			$(this).parents(".category2").find('.operation .sub').click(function(event) {
+				var name = $(this).parents('.category2').find('.category2_name .c2_name').val();
+				$.ajax({
+					url: '{:U("Category/changeCategory2_name")}',
+					type: 'POST',
+					dataType: 'json',
+					data: {
+						category2_id: category2_id,
+						name: name,
+					},
+					success:function(data){
+						if (data['status'] == 1) {
+							
+							window.location.reload();
+						};
+					},
+					error:function(){
+						alert('服务器错误');
+					},
+				})
+			});
+		});
+		//设置二级栏目是否在主页显示
+		$(".treeview-menu .ca-2").each(function(index, el) {
+			var i = $(this).find('.check_show .show input').val();
+			if (i==1) {
+				$(this).find('.check_show .show .glyphicon').removeClass('glyphicon-star-empty').addClass('glyphicon-star');
+			}else{
+				$(this).find('.check_show .show .glyphicon').removeClass('glyphicon-star').addClass('glyphicon-star-empty');
+			}
+		});
+		//修改二级栏目是否在主页显示状态
+		$('.treeview-menu .ca-2 .check_show .show').click(function(event) {
+			var id = $(this).parents('.ca-2').find('.category2_name .hidden').val();
+			var i = $(this).parents('.ca-2').find('.check_show .show .hidden').val();
+			if (i==0) {
+				$(this).find('span').removeClass('glyphicon-star-empty').addClass('glyphicon-star');
+				i=1;
+			}else{
+				$(this).find('span').removeClass('glyphicon-star').addClass('glyphicon-star-empty');
+				i=0;
+			}
+			$.ajax({
+				url: '{:U("Category/changeCategory2_show")}',
+				type: 'POST',
+				dataType: 'json',
+				data: {
+					category2_id: id,
+					status: i,
+				},
+				success:function(data){
+					if (data['status'] == 1) {
+						
+					};
+				},
+				error:function(){
+					alert('服务器错误');
+				},
+			})
+		});
+    })
+    </script>
+  </head>
+  <body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+      <block name="menu"><include file="Base:header"/></block>
+      <block name="left"><include file="Base:left"/></block>
+      <block name="main">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1" >
+				<div class="row">
+				<div class="col-md-6 span2 ca1">
+					<h2>一级栏目管理</h2>
+					<div class="category-nav">
+						<div class="active treeview">
+					      <a href="javascript:void(0)" class="category1">
+					        <span class="glyphicon glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;一级栏目列表
+					      </a>
+					      <ul class="treeview-menu">
+					      	<volist name="category" id="vo">
+						      	<li class="category2 ca-1">
+						        	<div class="row">
+						        		<div class="col-md-1 check_show">
+						        			<button type="button" class="btn btn-default btn-xs show" aria-label="Left Align" data-toggle="tooltip" data-placement="left" title="是否在主页显示"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><input type="hidden" value="{$vo.category1_status}" class="hidden" /></button>
+						        			
+						        		</div>
+						        		<div class="col-md-6 category1_name">
+						        			<input type="text" class="form-control c1_name" value="{$vo.category1_name}" required="required" disabled='true'>
+						        			<input type="hidden" name=""class="form-control hidden" value="{$vo.category1_id}">
+						        		</div>
+						        		<div class="col-md-5 operation">
+						        			<button type="button" class="btn btn-default btn-xs change" aria-label="Left Align" data-toggle="tooltip" data-placement="left" title="编辑"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button>
+						        			<button type="button" class="btn btn-default btn-xs delete" aria-label="Left Align" data-toggle="tooltip" data-placement="right" title="删除" style="margin-left:5px;"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+						        		</div>
+						        	</div>
+						        </li>
+					      	</volist>
+					      </ul>
+					    </div>
+					</div>
+				</div>
+				<div class="col-md-6 span2 ca2">
+					<h2>二级栏目管理</h2>
+					    <volist name="category" id="vo">
+						    <div class="active treeview">
+						      <a href="javascript:void(0)" class="category1">
+						        <span class="glyphicon glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>&nbsp;{$vo.category1_name}
+						      </a>
+						      <ul class="treeview-menu">
+						      	<volist name="vo['getCategory2']" id="vo2">
+							      	<li class="category2 ca-2">
+							        	<div class="row">
+							        		<div class="col-md-1 check_show">
+							        			<button type="button" class="btn btn-default btn-xs show" aria-label="Left Align" data-toggle="tooltip" data-placement="left" title="是否在主页显示"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><input type="hidden" value="{$vo2.category2_show}" class="hidden" /></button>
+							        		</div>
+							        		<div class="col-md-6 category2_name">
+							        			<input type="text" class="form-control c2_name" value="{$vo2.category2_name}" required="required" disabled='true'>
+						        				<input type="hidden" name=""class="form-control hidden" value="{$vo2.category2_id}">
+							        		</div>
+							        		<div class="col-md-5 operation">
+							        			<button type="button" class="btn btn-default btn-xs change" aria-label="Left Align" data-toggle="tooltip" data-placement="left" title="编辑"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button>
+						        				<button type="button" class="btn btn-default btn-xs delete" aria-label="Left Align" data-toggle="tooltip" data-placement="right" title="删除" style="margin-left:5px;"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+							        		</div>
+							        	</div>
+							        </li>
+						      	</volist>
+						      </ul>
+						    </div>
+					    </volist>
+					</div>
+				</div>
+            </div>
+          </div>
+        </div>
+      </block>
+      <block name="footer"><include file="Base:footer"/></block>
+    </div>
+  </body>
+</html>

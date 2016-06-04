@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xml:lang="zh-CN">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" /> 
+  <meta charset="UTF-8" /> 
+  <title>查看订单</title> 
+  <meta name="viewport" content="width=1226" /> 
+  <meta name="description" content="" />  
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/base.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/main.min.css" /> 
+  <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/top_slide.js"></script> 
+  <script type="text/javascript" src="__PUBLIC__/Home/js/left_slide.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/layer/layer.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/address.js"></script>
+  <script type="text/javascript">
+    window.check = '{:U("Base/check")}';
+    window.url_index = '{:U("Index/index")}';
+    window.getUser = '{:U("User/getUser")}';
+    window.getEvaluate = '{:U("Order/addEvaluate")}'
+  </script>
+ </head> 
+ <body> 
+  <block name="menu"><include file="Base:top1" /></block> 
+  <block name="left"><include file="Base:header" /></block>
+  <block name="main">
+    <div class="breadcrumbs"> 
+     <div class="container"> 
+      <a href="{:U('Index/index')}">首页</a>
+      <span class="sep">&gt;</span>
+      <span>订单详情</span> 
+     </div> 
+    </div> 
+    <div class="page-main user-main"> 
+     <div class="container"> 
+      <div class="row"> 
+       <block name="right"><include file="Base:left" /></block>
+       <div class="span16"> 
+         <div class="uc-box uc-main-box">
+            <div class="uc-content-box order-view-box"> 
+            <div class="box-hd"> 
+             <h1 class="title">订单详情<small>请谨防钓鱼链接或诈骗电话</small></h1> 
+             <div class="more clearfix"> 
+              <h2 class="subtitle">订单号：<volist name="sum" id="vo">{$vo.order_num}</volist></h2> 
+             </div> 
+            </div> 
+            <div class="box-bd"> 
+             <div class="uc-order-item uc-order-item-finish"> 
+              <div class="order-detail"> 
+               <table class="order-items-table"> 
+                <tbody>
+                <volist name="order" id="vo">
+                 <tr> 
+                  <td class="col col-thumb"> 
+                   <div class="figure figure-thumb"> 
+                    <a target="_blank" href="{:U('Index/artical',array('id'=>$vo[pk_product_id]))}"> <img src="{$vo.product_img}" width="80" height="80" alt="{$vo.product_img}" /> </a> 
+                   </div> </td> 
+                   <input type="hidden" class="name-hidden" value="{$vo.product_name}" />
+                   <input type="hidden" class="id-hidden" value="{$vo.product_id}" />
+                  <td class="col col-name"> <p class="name"> <a class="pro_name" target="_blank" href="{:U('Index/artical',array('id'=>$vo[product_id]))}">{$vo.product_name}</a> </p> </td> 
+                  <td class="col col-price"> <p class="price">0元 &times; {$vo.product_num}</p> </td> 
+                  <td class="col col-actions"><a href="javascript:void(0)" class="evaluate btn btn-default">评价</a></td> 
+                 </tr> 
+                </volist>
+                </tbody>
+               </table> 
+              </div> 
+              <div id="editAddr" class="order-detail-info"> 
+               <h3>收货信息</h3> 
+               <volist name="msg" id="vo">
+                <table class="info-table"> 
+                  <tbody>
+                   <tr> 
+                    <th>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</th> 
+                    <td>{$vo.user_name}</td> 
+                   </tr> 
+                   <tr> 
+                    <th>联系电话：</th> 
+                    <td>{$vo.user_phone}</td> 
+                   </tr> 
+                   <tr> 
+                    <th>收货地址：</th> 
+                    <td>{$vo.user_address}</td> 
+                   </tr> 
+                  </tbody>
+                 </table> 
+               </volist>
+              </div>  
+              <div class="order-detail-total"> 
+               <table class="total-table"> 
+                <tbody>
+                 <tr> 
+                  <th class="total">订单金额：</th> 
+                  <td class="total"><span class="num"><volist name="sum" id="vo">{$vo.order_sum}</volist></span>元</td> 
+                 </tr> 
+                </tbody>
+               </table> 
+              </div> 
+             </div> 
+            </div> 
+           </div>
+         </div> 
+        </div> 
+      </div> 
+     </div> 
+    </div> 
+  </block>
+  <block name="footer"><include file="Base:footer" /></block>
+ </body>
+</html>

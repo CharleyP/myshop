@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://order.mi.com/portal?r=41218.1458877857 -->
+<html lang="zh-CN" xml:lang="zh-CN">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" /> 
+  <meta charset="UTF-8" /> 
+  <title>个人中心</title> 
+  <meta name="viewport" content="width=1226" /> 
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="__PUBLIC__/Home/css/base.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/main.min.css" /> 
+  <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/top_slide.js"></script> 
+  <script type="text/javascript" src="__PUBLIC__/Home/js/left_slide.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/layer/layer.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/user_index.js"></script>
+  <script type="text/javascript">
+  window.check = '{:U("Base/check")}';
+  window.url_index = '{:U("Index/index")}';
+  window.getUser = '{:U("User/getUser")}';
+  window.order_sum = '{:U("User/order_sum")}';
+  window.record_sum = '{:U("User/record_sum")}';
+  </script>
+ </head> 
+ <body> 
+  <block name="menu"><include file="Base:top1" /></block>
+  <block name="left"><include file="Base:header" /></block>
+  <block name="main">
+    <div class="breadcrumbs"> 
+     <div class="container"> 
+      <a href="{:U('Index/index')}">首页</a>
+      <span class="sep">&gt;</span>
+      <span>个人中心</span> 
+     </div> 
+    </div> 
+    <div class="page-main user-main"> 
+     <div class="container"> 
+      <div class="row"> 
+       <block name="right"><include file="Base:left" /></block>
+       <div class="span16"> 
+        <div class="uc-box uc-main-box"> 
+         <div class="uc-content-box portal-content-box"> 
+          <div class="box-bd"> 
+           <div class="portal-main clearfix"> 
+            <div class="user-card"> 
+             <h2 class="username"></h2> 
+             <p class="tip"></p> 
+             <img class="avatar" src="__PUBLIC__/Home/img/user.jpg" width="150" height="150" /> 
+             <p>wellcome:</p><span class="name"></span>
+            </div> 
+            <div class="user-actions"> 
+             <ul class="action-list"> 
+              <li class="user_pass">账户安全：<span class="level level-2">普通</span></li> 
+             </ul> 
+            </div> 
+           </div> 
+           <div class="portal-sub"> 
+            <ul class="info-list clearfix"> 
+             <li class="order_num"> <h3>我的订单：<span class="num">0</span></h3> <a href="{:U('User/allorder')}">查看所有订单<i class="iconfont"></i></a> <img src="__PUBLIC__/Home/img/portal-icon-1.png"/> </li> 
+             <li class="pay_buy_num"> <h3>待付款商品：<span class="num">0</span></h3> <a href="{:U('Order/buy')}">查看购物车<i class="iconfont"></i></a> <img src="__PUBLIC__/Home/img/portal-icon-2.png" alt="" /> </li>
+            </ul> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div>   
+    </div>
+  </block>
+  <block name="footer"><include file="Base:footer" /></block>
+ </body>
+</html>

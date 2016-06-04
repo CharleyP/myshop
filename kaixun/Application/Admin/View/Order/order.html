@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/bootstrap.min.js"></script>  
+    <script src="__PUBLIC__/Admin/js/app.min.js"></script>
+    <script src="__PUBLIC__/Admin/js/demo.js"></script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
+    <link rel="stylesheet" href="__PUBLIC__/Admin/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/Admin/dist/css/skins/_all-skins.min.css">
+    <style type="text/css">
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    .content-wrapper{
+      background: #fff;
+    }
+    .order{
+      border:1px solid #ccc;
+    }
+    table tr img{
+      width: 80px;
+      height: 80px;
+    }
+    .order .order-msg h4{
+      float: left;
+      margin-right: 50px;
+    }
+    </style>
+    <script type="text/javascript">
+    $(function(){
+    })
+    </script>
+  </head>
+  <body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+      <block name="menu"><include file="Base:header"/></block>
+      <block name="left"><include file="Base:left"/></block>
+      <block name="main">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="order col-md-8 col-md-offset-2">
+              <h2>订单详情</h2>
+              <div class="order-msg">
+                <foreach name="orderMsg" item="vo">
+                <h4 class="">订单号：<span style="color:red">{$vo.order_num}</span></h4>
+                <h4 class="">订单时间：<span style="color:red">{$vo.order_time|date='Y-m-d',###}</span></h4>
+                <h4 class="">订单金额：<span style="color:red">{$vo.order_sum}</span>元</h4>
+                </foreach>
+              </div>
+              
+              <table class="table">
+                <tbody>
+                  <volist name="productMsg" id="vo2">
+                  <tr>
+                    <td style="width:80px;"><img src="{$vo2.img_url}" alt="{$vo2.img_url}"></td>
+                    <td style="font-size:18px;line-height:80px;">{$vo2.product.name}</td>
+                    <td style="font-size:18px;line-height:80px;">{$vo2.product_price}元×{$vo2.product_num}</td>
+                  </tr>
+                  </volist>
+                </tbody>
+              </table>
+              <hr/>
+              <h3>用户信息</h3>
+              <volist name="userMsg" id="vo">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td style="width:200px;">用户账户：</td>
+                    <td>{$vo.user_account}</td>
+                  </tr>
+                  <tr>
+                    <td style="width:200px;">用户名称：</td>
+                    <td>{$vo.user_name}</td>
+                  </tr>
+                  <tr>
+                    <td style="width:200px;">用户手机：</td>
+                    <td>{$vo.user_phone}</td>
+                  </tr>
+                  <tr>
+                    <td style="width:200px;">收货地址：</td>
+                    <td>{$vo.user_address}</td>
+                  </tr>
+                </tbody>
+              </table>
+              </volist>
+            </div>
+          </div>
+        </div>
+      </block>
+      <block name="footer"><include file="Base:footer"/></block>
+    </div>
+  </body>
+</html>

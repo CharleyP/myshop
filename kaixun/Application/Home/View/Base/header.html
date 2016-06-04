@@ -1,0 +1,72 @@
+<div class="site-header"> 
+   <div class="container"> 
+    <div class="header-logo"> 
+     <a href="{:U('Index/index')}"><img src="__PUBLIC__/Home/img/logo.png" width="300px" height="60px" /> </a>
+    </div>
+    <div class="header-nav"> 
+     <ul class="nav-list J_navMainList clearfix"> 
+      <li id="J_navCategory" class="nav-category"> 
+       <a class="link-category" href="javascript:void(0)" style="height:88px"><span class="text"></span></a> 
+       <div class="site-category"> 
+        <ul id="J_categoryList" class="site-category-list clearfix" style="border:1px solid #000"> 
+          <volist name="category" id="vo">
+            <li class="category-item"> <a class="title" href="javascript:void(0)">{$vo.category1_name}<i class="iconfont"></i></a>
+              <div class="children clearfix children-col-1">
+                <ul class="children-list children-list-col children-list-col-1">
+                  <volist name="vo['category2']" id="vo2">
+                    <li> 
+                      <a class="link" href="{:U('Index/alist',array('cat' => $vo2[category2_id]))}" >
+                        <img class="thumb" src="__PUBLIC__/Home/img/ca2.png"  width="40" height="40" alt="" />
+                        <span class="text">{$vo2.category2_name}</span>
+                      </a>
+                    </li>
+                 </volist>
+                </ul>
+              </div> 
+            </li>
+          </volist>
+        </ul>
+       </div></li> 
+      <volist name="top_menu" id="vo">
+        <li class="nav-item"> <a class="link" href="javascript:void(0);"><span class="text">{$vo.category2_name}</span><span class="arrow"></span></a> 
+          <div class="item-children"> 
+           <div class="container"> 
+            <ul class="children-list clearfix"> 
+              <volist name="vo['product']" id="vo2">
+               <li class=""> 
+                <div class="figure figure-thumb"> 
+                 <a href="{:U('Index/artical',array('id'=>$vo2[product_id]))}" >
+                  <img src="{$vo2.product_img}"  alt="{$vo2.product_name}" width="160" height="110" />
+                 </a> 
+                </div> 
+                <div class="title">
+                 <a href="" >{$vo2.product_name}&nbsp;&nbsp;&nbsp;&nbsp;{$vo2.product_specifications}</a>
+                </div> <p class="price">0元</p> 
+               </li>
+              </volist>
+            </ul> 
+           </div> 
+          </div> 
+         </li>
+      </volist>
+     </ul> 
+    </div> 
+    <div class="header-search"> 
+     <form id="J_searchForm" class="search-form clearfix" action="{:U('Index/search')}" method="post">
+      <label for="search" class="hide">站内搜索</label> 
+      <input class="search-text" type="search" id="search" name="keywords" autocomplete="off" /> 
+      <input type="submit" class="search-btn iconfont" value="" /> 
+      <div id="J_keywordList" class="keyword-list hide">
+       <ul class="result-list"></ul>
+      </div>
+     </form> 
+    </div> 
+   </div> 
+   <div id="J_navMenu" class="header-nav-menu header-nav-menu-active" style="display: none;">
+    <div class="container">
+     <ul class="children-list clearfix"> 
+
+     </ul>
+    </div>
+   </div>
+  </div>
